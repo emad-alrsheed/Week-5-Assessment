@@ -11,10 +11,15 @@ Ex:  hello("Alex") => "HELLO Alex !"
 Ex:  hello(null) => null
 
 */
-
-function hello() {
+var name1="  "
+function hello(aName) {
   // WRITE YOUR CODE UNDER THIS LINE  
+if(name1===" "){
 
+  return null
+  
+}
+return "HELLO"+(name1)
 }
 
 
@@ -31,11 +36,16 @@ Ex: calculateTax(315,0.10)
 Ex: calculateTax(100,0.15) 
 => "You got 100 JD from sales, you should pay 15 JD for tax and you will have 85 JD as net sales."
 */
-
-function calculateTax() {
+var tax = 16
+var netSales = 0
+var sumTax=0
+function calculateTax(selees,amonut) {
   // WRITE YOUR CODE UNDER THIS LINE 
-
-}
+if(selees >= 1)
+  netSales = selees-(100/16)
+  sumTax = netSales-selees
+  
+}console.log("You got "+selees+"JD from sales, you should pay"+ sumTax+" JD for tax and you will have"+netSales)
 
 
 /* Q3:
@@ -51,11 +61,15 @@ odd start with capital letter
 Ex: repeatChar("a",2); => "a, A"
 Ex: repeatChar("C",5); => "C, c, C, c, C"
 */
-
-function repeatChar() {
-  // WRITE YOUR CODE UNDER THIS LINE         
+var out = " "
+function repeatChar(num,str1) {
+  // WRITE YOUR CODE UNDER THIS LINE 
+         
+while(num>=1)
+out = str1+","+(num-1)
 
 }
+console.log(out)
 
 
 /* Q4:
@@ -72,9 +86,13 @@ Ex: stringToCapital("Are you a student in coding ACADEMY by ORANGE ?")
 => "ARE YOU A STUDENT IN CODING ACADEMY BY ORANGE ?"
 */
 
-function stringToCapital() {
-  // WRITE YOUR CODE UNDER THIS LINE         
+var res = str.toUpperCase();
 
+function stringToCapital(str2) {
+  // WRITE YOUR CODE UNDER THIS LINE         
+while(str2 === " ")
+
+return res(str2)
 }
 
 // Good luck :)
